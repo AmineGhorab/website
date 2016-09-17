@@ -59,7 +59,7 @@ p    { font-size: 10em;text-decoration: underline; } /* = 14px */
 .ondemande{font-size: 1.875em;margin: 30px 0 300px;}
 .date{font-size: 1.250em;margin: 170px 0;}
 .date span{font-size: 1em ;display: inline; color:white;}
-div span{font-size:1.625em; margin: 0 0 50px;display: block;color: white;}
+div span{font-size:1.225em; margin: 0 0 50px;display: block;color: white;}
 	/*p{font-size: 4em;text-align:center;}*/
 	ul{margin-bottom:50px;}
 	ul li a{ text-decoration: none;color:white;line-height: 1.625em; }
