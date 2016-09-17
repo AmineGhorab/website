@@ -5,23 +5,60 @@
     <title>Amine Ghorab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
   </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Amine Ghorab</h1>
-    </section>
+  <body onload="clock()">
+	<header>
+		<div id="date" class="date"></div>
+	</header>
+	<div>
+		<span>AMINE GHORAB</span>
+		<p>Graphic Designer</p>
+		<p>working in</p>
+		<p>visual identity,</p>
+		<p>3D illustration and</p>
+		<p>interface design</p>
+		<p class="ondemande">portfolio+cv on request</p>
+	</div>
+	<footer>
+		<ul>
+				<li><a href="www.amineghorab.tumblr.com">Tumblr</a></li>
+				<li><a href="www.instagramcom/amineghorab">Instagram</a></li>
+				<li><a href="mailto:amineghorab@gmail.com">amineghorab@gmail.com</a></li>
+				<li><a href="#">+33 620 014 245</a></li>
+				<li><a href="#">Shop</a></li>
+		</ul>
+		<span>©COPYRIGHT 2016_____THANKS</span>
+	</footer>
+</body>
+<script type="text/javascript">
+	var clock = function (){
+  var d = new Date(),
+   	hour = d.getHours(),
+   	minutes = d.getMinutes()
+  	hour = addzero(hour)
+  	minutes = addzero(minutes)
 
-    <section class="main-content">
-      <h3><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-      <p>Hello world!</p>
+  var dayn = d.getDate(),
+   	day = d.getDay(),
+   	month = d.getMonth(),
+   	daysInWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday',
+                    'Thursday', 'Friday', 'Saturday'],
+   	mMonth = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+   	year = d.getFullYear()
+   	Fulldate = "<span>"+hour+':'+minutes + "</span> " + daysInWeek[day] +" "+ dayn +"th " + mMonth[month] +" "+ year;
+	d = document.getElementById("date");
+	d.innerHTML =  Fulldate;
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/AmineGhorab/website">Amine Ghorab</a> is maintained by <a href="https://github.com/AmineGhorab">AmineGhorab</a>.</span>
-      </footer>
+	var t = setTimeout(clock, 1000)
 
-    </section>
+}
 
-  </body>
+function addzero(i){
+	if (i < 10) { i = "0"+i}
+		return i;
+}
+
+
+</script>
 </html>
