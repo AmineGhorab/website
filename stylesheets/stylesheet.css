@@ -64,7 +64,7 @@ div span{font-size:1.225em; margin: 0 0 50px;display: block;color: white;}
 	ul{margin-bottom:50px;}
 	ul li a{ text-decoration: none;color:white;line-height: 1.625em; }
 	footer span {font-size:0.774em;}
-		@media screen and (max-width: 990px){
+		@media screen and (max-width: 1000px){
 		p{font-size: 4em;}
 	}
 	@media screen and (max-width: 500px){
