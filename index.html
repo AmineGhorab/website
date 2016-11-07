@@ -18,7 +18,7 @@
 		<p>visual identity,</p>
 		<p>3D illustration and</p>
 		<p>interface design</p>
-		<p class="ondemande">portfolio+cv on request</p>
+		<p class="ondemande">portfolio on request</p>
 	</div>
 	<footer>
 		<ul>
@@ -31,34 +31,4 @@
 		<span>©COPYRIGHT AMINEGHORAB</span>
 	</footer>
 </body>
-<script type="text/javascript">
-	var clock = function (){
-  var d = new Date(),
-   	hour = d.getHours(),
-   	minutes = d.getMinutes()
-  	hour = addzero(hour)
-  	minutes = addzero(minutes)
-
-  var dayn = d.getDate(),
-   	day = d.getDay(),
-   	month = d.getMonth(),
-   	daysInWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday',
-                    'Thursday', 'Friday', 'Saturday'],
-   	mMonth = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-   	year = d.getFullYear()
-   	Fulldate = "<span>"+hour+':'+minutes + "</span> " + daysInWeek[day] +" "+ dayn +"th " + mMonth[month] +" "+ year;
-	d = document.getElementById("date");
-	d.innerHTML =  Fulldate;
-
-	var t = setTimeout(clock, 1000)
-
-}
-
-function addzero(i){
-	if (i < 10) { i = "0"+i}
-		return i;
-}
-
-
-</script>
 </html>
